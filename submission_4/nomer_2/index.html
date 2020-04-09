@@ -1,1 +1,31 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel XYZ</title>
+    <script type="text/javascript" src="abc.js"></script>
+</head>
+<style>
+    form{line-height:2em}
+    label, select, input{margin-left: 5px;width: 150px;display: block;float: left;line-height: 15px}
+    body{background-color: lightgrey;}
+    </style>
+<body>
+    <h1>Pemesanan Tiket Travel XYZ</h1>
+</br>
+<form>
+<label>Nama Pemesan : </label><input type="text" id="nm_pemesan"></br>
+<label>Tujuan Pergi : </label>
+<select id="tujuan">
+    <option value="kampung_lalang">Kampung Lalang</option>
+    <option value="binjai">Binjai</option>
+    <option value="medan">Medan</option>
+</select></br>
+<label>Jumlah Tiket : </label><input type="text" id="jml_tiket"></br>
+<label>Apakah anda Member? </label> 
+<input type="checkbox" id="member"></br>
+<button type="submit" id="cekharga" onclick="hitung_bayar()">Cek Total Harga</button>
+</form>
+</body>
+</html>
